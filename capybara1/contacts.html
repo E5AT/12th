@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .flex-container1 {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container1 > div {
+margin: 10px;
+padding: 20px;
+color: white;
+background-color: #4D3E27;
+}
+
+.flex-container1 > div > img{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container1 > div > h1,p {
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+<div class="flex-container">
+  <div> <a href="home.html"><img src="images/logo.png" alt="logo" style="width: 50px;"></div></a>
+  <div><h1><a href="about.html">За капибарите</a></h1></div>
+  <div><h1><a href="gallery.html">Галерия</a></h1></div> 
+  <div><h1><a href="contacts.html">Контакти</a></h1></div>
+  </div> <br>
+
+  <div class="flex-container1">
+    <div>
+      <img src="images/location.png">
+      <h1>Локация</h1>
+      <p>ул. Мария Атанасова Nº5, София</p>
+      <p>ул. Йордан Йовков Nº24, Пловдив</p>
+    </div>
+
+    <div>
+      <img src="images/phone.png">
+      <h1>Телефон</h1>
+      <p>София - +35984893921</p>
+      <p>Пловдив - +359988959054</p>
+    </div>
+
+    <div>
+      <img src="images/gmail.png">
+      <h1>Имейл</h1>
+      <p>capybara-sofia@abv.bg</p>
+      <p>capybara-plovdiv@abv.bg</p>
+    </div>
+  </div>
+</body>
+</html>

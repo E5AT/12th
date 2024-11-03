@@ -1,0 +1,53 @@
+@font-face {
+    font-family: navBar;
+    src: url(fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: header;
+    src: url(fonts/NotoSerif-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: paragraph;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+body{
+    background-color: #7E7053 ;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: header;
+    color: #D6D7D2;
+}
+
+p,ul{
+    font-family: paragraph;
+    color: #EDEDED  ;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.flex-container {
+display: flex;
+background-color: #4D3E27 ;
+}
+
+.flex-container > div {
+margin: auto;
+}
+
+.flex-container > div > h1 {
+    color: #D6D7D2 ;
+    font-family: navBar;
+}
+
+a {
+    text-decoration: none;
+    color: #D6D7D2;
+  }

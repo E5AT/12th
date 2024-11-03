@@ -2,6 +2,26 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .about{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .about > div{
+      margin: 50px;
+    }
+
+    .about > div > img{
+      margin: auto;
+      width: 500px;
+    }
+
+    p, ul{
+      font-size: 30px;
+    }
+  </style>
 </head>
 <body>
 <div class="flex-container">
@@ -10,16 +30,20 @@
   <div><h1><a href="gallery.html">Галерия</a></h1></div> 
   <div><h1><a href="contacts.html">Контакти</a></h1></div>
   </div> <br>
-  <h1>За капибарите</h1>
-  <h2>История</h2>
-  <div style="display: flex;">
-    <div><p>Преди векове са съществували Капибари, които са били големи като мечки, според археологически находки. По времето на конкистадорите Капибара била обявена за риба, за да може да бъде използвана за храна в четвъртък, когато се разрешавало яденето на риба. Днес Капибара може да се срещне в Южна Америка - тя е разпространена от Колумбия до северо-източната част на Аржентина. Капибара предпочита да живее във влажни тропически гори, както и на места, където има много храсти и обилна влага. Капибара също така може да живее и в савани, но предпочита да е в близост до водоеми, където да се крие и да плува.</p></div>
-    <div><img src="images/history.jpg" class="center" style="width: 300px;"></div>
+  <h1 style="text-align: center;">За капибарите</h1>
+  <div class="about">
+    <div>
+      <h2>История</h2>
+      <p>Преди векове са съществували Капибари, които са били големи като мечки, според археологически находки. По времето на конкистадорите Капибара била обявена за риба, за да може да бъде използвана за храна в четвъртък, когато се разрешавало яденето на риба. Днес Капибара може да се срещне в Южна Америка - тя е разпространена от Колумбия до северо-източната част на Аржентина. Капибара предпочита да живее във влажни тропически гори, както и на места, където има много храсти и обилна влага. Капибара също така може да живее и в савани, но предпочита да е в близост до водоеми, където да се крие и да плува.</p>
+    </div>
+    <div><img src="images/history.jpg" class="center" style="width: 700px;"></div>
   </div>
   
-  <div style="display: flex;">
+  <div class="about">
     <div>
-      <img src="images/capybara_with_a_bird.jpg" class="center" style="width: 500px;">
+      <img src="images/sleeping_capybara.jpeg">
+      <img src="images/capybara_in_water.jpg">
+      <img src="images/capybara_with_a_bird.jpg">
     </div>
 
   <div>

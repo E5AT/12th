@@ -21,6 +21,14 @@ h1,h2,h3,h4,h5,h6{
     color: #D6D7D2;
 }
 
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 30px;
+}
+
 p,ul{
     font-family: paragraph;
     color: #EDEDED  ;
@@ -45,6 +53,7 @@ margin: auto;
 .flex-container > div > h1 {
     color: #D6D7D2 ;
     font-family: navBar;
+    font-size: 30px;
 }
 
 a {

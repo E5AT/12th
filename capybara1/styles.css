@@ -29,7 +29,7 @@ h2{
     font-size: 30px;
 }
 
-p,ul{
+p,ul, button{
     font-family: paragraph;
     color: #EDEDED  ;
 }

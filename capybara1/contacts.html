@@ -27,6 +27,11 @@ background-color: #4D3E27;
 .flex-container1 > div > h1,p {
   text-align: center;
 }
+
+a{
+  text-decoration: none;
+  color: #EDEDED;
+}
   </style>
 </head>
 <body>
@@ -42,23 +47,34 @@ background-color: #4D3E27;
     <div>
       <img src="images/location.png">
       <h1>Локация</h1>
-      <p>ул. Мария Атанасова Nº5, София</p>
-      <p>ул. Йордан Йовков Nº24, Пловдив</p>
+      <p><a href="https://maps.app.goo.gl/ZDqmUAJ4RxbbbR4K8">ул. Мария Атанасова Nº5, София</a></p>
+      <p><a href="https://maps.app.goo.gl/MJv7tHCCa252jBiP6">ул. Йордан Йовков Nº24, Пловдив</a></p>
     </div>
 
     <div>
       <img src="images/phone.png">
       <h1>Телефон</h1>
-      <p>София - +35984893921</p>
-      <p>Пловдив - +359988959054</p>
+      <p><a href="tel:+359848939217">София - +359848939217</a></p>
+      <p><a href="tel:+359988959054">Пловдив - +359988959054</a></p>
     </div>
 
     <div>
       <img src="images/gmail.png">
       <h1>Имейл</h1>
-      <p>capybara-sofia@abv.bg</p>
-      <p>capybara-plovdiv@abv.bg</p>
+      <p><a href="mailto: capybara-sofia@abv.bg">capybara-sofia@abv.bg</a></p>
+      <p><a href="mailto: capybara-plovdiv@abv.bg">capybara-plovdiv@abv.bg</a></p>
     </div>
   </div>
+
+<div style="display: flex; justify-content: center; align-items: center; background-color: #4D3E27; padding: 30px; width: 300px; border-radius: 8px; text-align: center; margin: auto; margin-top: 50px;">
+  <form>
+    <h2 style="font-size: 20px; margin-bottom: 20px;">Свържете се с нас</h2>
+  <input type="text" placeholder="Въведете име" required><br>
+  <input type="text" placeholder="Въведете имейл" required><br>
+  <textarea placeholder="Вашето съобщение" required></textarea><br>
+  <button type="submit">ИЗПРАЩАНЕ</button>
+</form>
+</div>
+
 </body>
 </html>

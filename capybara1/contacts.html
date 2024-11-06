@@ -15,6 +15,7 @@ margin: 10px;
 padding: 20px;
 color: white;
 background-color: #4D3E27;
+border-radius: 10px;
 }
 
 .flex-container1 > div > img{
@@ -32,6 +33,51 @@ a{
   text-decoration: none;
   color: #EDEDED;
 }
+
+        .contact-form {
+            background-color: #4D3E27;
+            padding: 30px;
+            width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+          }
+
+        .contact-form h1 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: #7E7053;
+            font-size: 14px;
+            color: #D6D7D2;
+        }
+
+        .contact-form input[type="text"]::placeholder,
+        .contact-form input[type="email"]::placeholder,
+        .contact-form textarea::placeholder {
+            color: #D6D7D2;
+        }
+
+        .contact-form button {
+            background-color: #4D3E27;
+            color: #D6D7D2;
+            border: 2px solid #7E7053;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
   </style>
 </head>
 <body>
@@ -66,13 +112,13 @@ a{
     </div>
   </div>
 
-<div style="display: flex; justify-content: center; align-items: center; background-color: #4D3E27; padding: 30px; width: 300px; border-radius: 8px; text-align: center; margin: auto; margin-top: 50px;">
+<div class="contact-form">
   <form>
-    <h2 style="font-size: 20px; margin-bottom: 20px;">Свържете се с нас</h2>
-  <input type="text" placeholder="Въведете име" required><br>
-  <input type="text" placeholder="Въведете имейл" required><br>
-  <textarea placeholder="Вашето съобщение" required></textarea><br>
-  <button type="submit">ИЗПРАЩАНЕ</button>
+    <h1>Свържете се с нас</h1>
+    <input type="text" name="name" placeholder="Въведете име" required>
+    <input type="email" name="email" placeholder="Въведете имейл адрес" required>
+    <textarea name="message" placeholder="Вашето съобщение" rows="4" required></textarea>
+    <button type="submit">ИЗПРАЩАНЕ</button>
 </form>
 </div>
 

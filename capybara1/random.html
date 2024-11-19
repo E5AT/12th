@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Рандом капибари</title>
     <style>
         button{
@@ -30,8 +31,14 @@
 
         <script >
             function Random(){
+                let used=-1, num=0;
                 const image = document.getElementById("img")
-                let num = Math.floor(Math.random()*7)
+                
+                do{
+                num = Math.floor(Math.random()*7)
+                }while(used==num)
+
+                used = num
                 image.src=`images/${num}.jpg`
             }
         </script>

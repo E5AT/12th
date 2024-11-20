@@ -19,6 +19,8 @@
     </style>
 </head>
 <body>
+    <audio src="sound/capybara.mp3" autoplay></audio>
+
     <div class="flex-container">
         <div> <a href="home.html"><img src="images/logo.png" alt="logo" style="width: 50px;"></div></a>
         <div><h1><a href="about.html">За капибарите</a></h1></div>
@@ -30,20 +32,18 @@
         <img id="img" style="display: block; margin: auto; height: 400px;">
 
         <script >
+            let used=-1, num=0;
+            const image = document.getElementById("img")
+
             function Random(){
-                let used=-1, num=0;
-                const image = document.getElementById("img")
-                
                 do{
-                num = Math.floor(Math.random()*7)
+                num = Math.floor(Math.random()*10)
                 }while(used==num)
 
                 used = num
                 image.src=`images/${num}.jpg`
             }
         </script>
-
-        <audio src="sound/capybara.mp3" autoplay></audio>
 
         <footer>
             <p><a href="home.html">"Света на капибарите"</a> / <a href="random.html">Рандом капибари</a></p>

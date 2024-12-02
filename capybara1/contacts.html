@@ -71,14 +71,28 @@ a{
         }
 
         .contact-form button {
-            background-color: #4D3E27;
-            color: #D6D7D2;
-            border: 2px solid #7E7053;
             padding: 10px 20px;
             font-size: 14px;
             border-radius: 4px;
-            cursor: pointer;
             border-radius: 10px;
+        }
+
+        .formButton{
+            background-color: #4D3E27;
+            color: #D6D7D2;
+            border: 2px solid #7E7053;
+        }
+
+        .formButton:hover{
+          background-color: #5E4C32;
+          color: #F2F3EE;
+          border: 2px solid #948771;
+        }
+
+        .formButton:active{
+          background-color: #3E2F1E;
+          color: #C3C4C0;
+          border: 2px solid #5E4C32;
         }
   </style>
 </head>
@@ -120,7 +134,7 @@ a{
     <input type="text" name="name" placeholder="Въведете име" required>
     <input type="email" name="email" placeholder="Въведете имейл адрес" required>
     <textarea name="message" placeholder="Вашето съобщение" rows="4" required></textarea>
-    <button type="submit">ИЗПРАЩАНЕ</button>
+    <button type="submit" class="formButton">ИЗПРАЩАНЕ</button>
 </form>
 </div>
 

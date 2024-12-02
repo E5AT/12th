@@ -81,3 +81,38 @@ footer{
 footer > p {
     font-size: 15px;
 }
+
+
+.brown_button {
+    border: none;
+    color: #7E7053;
+    background-color: #4D3E27;
+  }
+
+  .brown_button:hover{
+    background-color: #5E4C32;
+    color: #93876C;
+  }
+
+  .brown_button:active{
+    background-color: #3E2F1E;
+    color: #6D6048;
+  }
+
+  .lightBrown_button{
+    border: 2px solid #4D3E27;
+    background-color: #7E7053;
+    color: #4D3E27;
+  }
+
+  .lightBrown_button:hover{
+    border: 2px solid #5E4C32;
+    background-color: #948771;
+    color: #3E2F1E;
+  }
+
+  .lightBrown_button:active{
+    border: 2px solid #3E2F1E;
+    background-color: #6D6048;
+    color: #2C2318;
+  }

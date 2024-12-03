@@ -16,7 +16,6 @@
     </style>
 </head>
 <body>
-    <audio src="sound/capybara.mp3" autoplay></audio>
 
     <div class="flex-container">
         <div> <a href="index.html"><img src="images/logo.png" alt="logo" style="width: 50px;"></div></a>
@@ -31,6 +30,7 @@
         <script >
             let used=-1, num=0;
             const image = document.getElementById("img")
+            var audio = new Audio("sound/capybara.mp3")
 
             function Random(){
                 do{
@@ -39,6 +39,7 @@
 
                 used = num
                 image.src=`images/${num}.jpg`
+                audio.play();
             }
         </script>
 

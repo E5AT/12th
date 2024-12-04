@@ -22,7 +22,6 @@ namespace WindowsFormsApp7
         public StreamReader rQuestions = new StreamReader("questions.txt");
         public StreamReader rAnswers = new StreamReader("answers.txt");
         public char[] answers = new char[5];
-        public char[] realAnswers = new char[5];
         public int count = 0;
 
         public void NextQuestion()
@@ -62,7 +61,7 @@ namespace WindowsFormsApp7
         private void nextQuestion_Click(object sender, EventArgs e)
         {
 
-            if (count == 4)
+            if (count != 4)
             {
                 if (!a.Checked && !b.Checked && !v.Checked && !g.Checked) MessageBox.Show("Маркирай отговор!");
                 else
@@ -74,17 +73,26 @@ namespace WindowsFormsApp7
             }
             else
             {
-                string line = "";
+
+                questionText.Clear();
+
+                string line = string.Empty;
                 int right = 0;
                 for (int i=0; line != null;i++)
                 {
                     line = rAnswers.ReadLine();
-                    realAnswers[i] = char.Parse(line);
-                    if (realAnswers[i] == answers[i]) right++;
+                    if (char.Parse(line) == answers[i])
+                    {
+                        right++;
+                        questionText.AppendText($"✔{answers[i]})\n");
+                    }
+                    else questionText.AppendText($"✘{answers[i]}) --> {line})\n");
                 }
 
                 questionText.AppendText($"{right}/5");
 
+                rQuestions.Close();
+                rAnswers.Close();
             }
         }
     }

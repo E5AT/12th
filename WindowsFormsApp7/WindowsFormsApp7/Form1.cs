@@ -17,12 +17,14 @@ namespace WindowsFormsApp7
         {
             InitializeComponent();
             NextQuestion();
+            ChangeNoText();
         }
 
         public StreamReader rQuestions = new StreamReader("questions.txt");
-        public StreamReader rAnswers = new StreamReader("answers.txt");
         public char[] answers = new char[5];
-        public int count = 0;
+        public char[] rAnswers = new char[5];
+        public int questionCount = 1,count=0, countRightAnswers = 0;
+        public int remaining = 5;
 
         public void NextQuestion()
         {
@@ -31,7 +33,7 @@ namespace WindowsFormsApp7
 а) {rQuestions.ReadLine()}
 б) {rQuestions.ReadLine()}
 в) {rQuestions.ReadLine()}
-г) {rQuestions.ReadLine()}");     
+г) {rQuestions.ReadLine()}");
         }
 
         public void AddAnswer(int num)
@@ -58,6 +60,37 @@ namespace WindowsFormsApp7
             }
         }
 
+
+        public void WriteResults()
+        {
+            StreamReader r = new StreamReader("answers.txt");
+            string line;
+            int counter = 0;
+            while ((line = r.ReadLine()) != null)
+            {
+                rAnswers[counter] = char.Parse(line);
+                counter++;
+            }
+
+            StreamWriter w = new StreamWriter("results.txt", false);
+            for(int i=0;i<answers.Length; i++)
+            {
+                if(answers[i] == rAnswers[i])
+                {
+                    w.WriteLine($"✔{answers[i]})");
+                    countRightAnswers++;
+                }
+                else w.WriteLine($"✘{answers[i]}) --> {rAnswers[i]})");
+            }
+            w.Write($"{countRightAnswers}/5");
+            w.Close();
+        }
+
+        public void ChangeNoText()
+        {
+            remainingQuestionsText.Text = $"Оставащи въпроси: {remaining}";
+            questionNoText.Text = $"Въпрос {questionCount++}";
+        }
         private void nextQuestion_Click(object sender, EventArgs e)
         {
 
@@ -68,31 +101,15 @@ namespace WindowsFormsApp7
                 {
                     NextQuestion();
                     AddAnswer(count);
+                    remaining--;
                     count++;
+                    ChangeNoText();
                 }
             }
             else
             {
-
-                questionText.Clear();
-
-                string line = string.Empty;
-                int right = 0;
-                for (int i=0; line != null;i++)
-                {
-                    line = rAnswers.ReadLine();
-                    if (char.Parse(line) == answers[i])
-                    {
-                        right++;
-                        questionText.AppendText($"✔{answers[i]})\n");
-                    }
-                    else questionText.AppendText($"✘{answers[i]}) --> {line})\n");
-                }
-
-                questionText.AppendText($"{right}/5");
-
-                rQuestions.Close();
-                rAnswers.Close();
+                WriteResults();
+                this.Close();
             }
         }
     }

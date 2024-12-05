@@ -67,7 +67,7 @@
             this.remainingQuestionsText.Name = "remainingQuestionsText";
             this.remainingQuestionsText.Size = new System.Drawing.Size(226, 25);
             this.remainingQuestionsText.TabIndex = 6;
-            this.remainingQuestionsText.Text = "Оставащи въпроси: 4";
+            this.remainingQuestionsText.Text = "Оставащи въпроси: 5";
             // 
             // questionNoText
             // 

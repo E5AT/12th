@@ -108,6 +108,7 @@ namespace WindowsFormsApp7
             }
             else
             {
+                AddAnswer(count);
                 WriteResults();
                 this.Close();
             }

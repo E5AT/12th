@@ -1,0 +1,16 @@
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\bin\Debug\net8.0-windows\MerryChristmas.exe
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\bin\Debug\net8.0-windows\MerryChristmas.deps.json
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\bin\Debug\net8.0-windows\MerryChristmas.runtimeconfig.json
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\bin\Debug\net8.0-windows\MerryChristmas.dll
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\bin\Debug\net8.0-windows\MerryChristmas.pdb
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.Form1.resources
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.csproj.GenerateResource.cache
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.AssemblyInfoInputs.cache
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.AssemblyInfo.cs
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.csproj.CoreCompileInputs.cache
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.dll
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\refint\MerryChristmas.dll
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.pdb
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\MerryChristmas.genruntimeconfig.cache
+C:\Users\КрумМанолов\source\repos\MerryChristmas\MerryChristmas\obj\Debug\net8.0-windows\ref\MerryChristmas.dll
